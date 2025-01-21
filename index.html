@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +13,24 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Michroma&family=Ovo&family=Oxanium:wght@200..800&family=Pirata+One&family=Pixelify+Sans:wght@400..700&family=Racing+Sans+One&family=Sarina&family=Yatra+One&display=swap" rel="stylesheet">  
-    </head>
+    
+</head>
     <body>
-        <div><img src="background/Group 46.png" style="z-index: -1; position: absolute; width:100%; margin-left: 0;padding-left: 0;"></div>
-        <nav></nav>
+        <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1;"><img src="background/Group 46.png" style="z-index: -1;top:0; position: absolute; padding-left: 0;background-repeat: repeat-y;overflow-x: hidden;overflow-y: hidden;"></div>
+        <div class="nav">
+            <div class="nav-a">
+                <img src="icons/chipmit-logo.png" >
+            </div>
+            <div class="nav-b">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Team</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="nav-c">
+                <button>follow us</button>
+            </div>
+        </div>
         <div class="light"></div>
     <script type="text/javascript">
         const lightEffect = document.querySelector('.light');
@@ -26,7 +42,7 @@ document.addEventListener('mousemove', (e) => {
 
 
     </script>
-        <div style="z-index: 0;">
+        <div style="z-index: 0;position: relative;">
             <div class="heading">
                 <div class="superior">India's First Chip
                     Design College Club.</div>
@@ -34,7 +50,7 @@ document.addEventListener('mousemove', (e) => {
                 </div>
                 <form action="" class="contact-us-form">
                     <input class="contact-us" type="text" placeholder="name@email.com">
-                    <button class="contact-us-button">Contact Us</button>
+                    <button class="contact-us-button" >Contact Us</button>
                 </form>
                 <div class="pictures"></div>
             </div>
@@ -47,7 +63,7 @@ document.addEventListener('mousemove', (e) => {
                         <div class="item" style="font-family: Racing Sans One">graphic design</div>
                         <div class="item" style="font-family: Ovo">managment</div>
                         <div class="item" style="font-family: Oxanium">coding & scripting</div>
-                        <div class="item" style="font-family: Pixelify Sana">comp.architecture</div>
+                        <div class="item" style="font-family: Pixelify Sans">comp.architecture</div>
                         <div class="item" style="font-family: Yatra One">outreach</div>
                         <div class="item" style="font-family: Kalam">simulation & design</div>
                         <div class="item" style="font-family: Sarina">social media</div>
@@ -58,7 +74,7 @@ document.addEventListener('mousemove', (e) => {
                         <div class="item" style="font-family: Racing Sans One">graphic design</div>
                         <div class="item" style="font-family: Ovo">managment</div>
                         <div class="item" style="font-family: Oxanium">coding & scripting</div>
-                        <div class="item" style="font-family: Pixelify Sana">comp.architecture</div>
+                        <div class="item" style="font-family: Pixelify Sans">comp.architecture</div>
                         <div class="item" style="font-family: Yatra One">outreach</div>
                         <div class="item" style="font-family: Kalam">simulation & design</div>
                         <div class="item" style="font-family: Sarina">social media</div>
@@ -265,18 +281,18 @@ document.addEventListener('mousemove', (e) => {
             <div style="height:1px ;background-image:linear-gradient(to right,transparent,#595959,transparent) ;margin-top: 10px;margin-bottom: 10px;"></div>
             <div class="team-structure-a">Team Structure</div>
             <div class="team-structure" >
-                <div>
-                    <div><div>The</div><span style="color:rgb(221, 255, 0);">Board</span><div>Team</div></div>
+                <div class="team-structure-container" id="">
+                    <div class="team-structure-title"><div>The</div><span style="color:rgb(221, 255, 0);">Board</span><div>Team</div></div>
                     
                     <div class="team-structure-b" >The Board is made up of the division head members who oversee the strategic direction of ChipMIT. They are responsible for high-level decision-making, planning, and ensuring the club stays aligned with its goals.</div>
-                </div>
-                <div>
-                    <div><div>The</div><span style="color:rgb(221, 255, 0);">Core</span><div>Team</div></div>
+                </div >
+                <div class="team-structure-container">
+                    <div class="team-structure-title"><div>The</div><span style="color:rgb(221, 255, 0);">Core</span><div>Team</div></div>
                     
                     <div class="team-structure-c">The Core Team consists of second-year members who handle the day-to-day operations of ChipMIT. They execute tasks, manage events, and ensure smooth implementation of projects.</div>
                 </div>
-                <div>
-                    <div><div>The</div><span style="color:rgb(221, 255, 0);">Foundation</span><div>Team</div></div>
+                <div class="team-structure-container">
+                    <div class="team-structure-title"><div>The</div><span style="color:rgb(221, 255, 0);">Foundation</span><div>Team</div></div>
                     
                     <div class="team-structure-d">The Foundation Team is made up of first-year members who support the club’s activities. They assist with tasks, help with publicity, and play an essential role in bringing projects to life</div>
                 </div>
@@ -305,23 +321,23 @@ document.addEventListener('mousemove', (e) => {
                                 </svg>
                             </div>
                         </div>
-                        <div class="framer-ve20jg-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></g></svg></div></div></div>
+                        <div class="framer-ve20jg-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(255, 255, 255))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(255, 255, 255)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></g></svg></div></div></div>
                     </div>
                      </button>
                 <button class="button-c">
                     <div class="button-a"> 
                         <div>LinkedIn</div>
-                    <div class="framer-1lsg37o" data-framer-name="Icon Wrapper" style="opacity: 1; height: 18px;width: 18px;"><div class="framer-bnp6hl-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;" class="custom-cursor-on-hover"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M216,26H40A14,14,0,0,0,26,40V216a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V40A14,14,0,0,0,216,26Zm2,190a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V40a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2ZM94,112v64a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0Zm88,28v36a6,6,0,0,1-12,0V140a22,22,0,0,0-44,0v36a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0v2.11A34,34,0,0,1,182,140ZM98,84A10,10,0,1,1,88,74,10,10,0,0,1,98,84Z"></path></g></svg></div></div><div class="framer-ve20jg-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></g></svg></div></div></div>
+                    <div class="framer-1lsg37o" data-framer-name="Icon Wrapper" style="opacity: 1; height: 18px;width: 18px;"><div class="framer-bnp6hl-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;" class="custom-cursor-on-hover"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M216,26H40A14,14,0,0,0,26,40V216a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V40A14,14,0,0,0,216,26Zm2,190a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V40a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2ZM94,112v64a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0Zm88,28v36a6,6,0,0,1-12,0V140a22,22,0,0,0-44,0v36a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0v2.11A34,34,0,0,1,182,140ZM98,84A10,10,0,1,1,88,74,10,10,0,0,1,98,84Z"></path></g></svg></div></div><div class="framer-ve20jg-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(255, 255, 255)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></g></svg></div></div></div>
                </div>
                     </button>
                 <button class="button-d">
                     <div class="button-a"><div>LinkTree</div>
-                    <div class="framer-1lsg37o" data-framer-name="Icon Wrapper" style="opacity: 1; height: 18px;width: 18px;"><div class="framer-bnp6hl-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M134,160v72a6,6,0,0,1-12,0V160a6,6,0,0,1,12,0Zm74-62H142.48l45.76-45.76a6,6,0,0,0-8.48-8.48L134,89.52V24a6,6,0,0,0-12,0V89.52L76.24,43.76a6,6,0,0,0-8.48,8.48L113.52,98H48a6,6,0,0,0,0,12h65.52L67.76,155.76a6,6,0,1,0,8.48,8.48L128,112.48l51.76,51.76a6,6,0,0,0,8.48-8.48L142.48,110H208a6,6,0,0,0,0-12Z"></path></g></svg></div></div><div class="framer-ve20jg-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></g></svg></div></div></div>
+                    <div class="framer-1lsg37o" data-framer-name="Icon Wrapper" style="opacity: 1; height: 18px;width: 18px;"><div class="framer-bnp6hl-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M134,160v72a6,6,0,0,1-12,0V160a6,6,0,0,1,12,0Zm74-62H142.48l45.76-45.76a6,6,0,0,0-8.48-8.48L134,89.52V24a6,6,0,0,0-12,0V89.52L76.24,43.76a6,6,0,0,0-8.48,8.48L113.52,98H48a6,6,0,0,0,0,12h65.52L67.76,155.76a6,6,0,1,0,8.48,8.48L128,112.48l51.76,51.76a6,6,0,0,0,8.48-8.48L142.48,110H208a6,6,0,0,0,0-12Z"></path></g></svg></div></div><div class="framer-ve20jg-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(255, 255, 255)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></g></svg></div></div></div>
              </div>
                        </button>
                 <button class="button-e">
                     <div class="button-a"><div>Twitter / X</div>
-                    <div class="framer-1lsg37o" data-framer-name="Icon Wrapper" style="opacity: 1; height: 18px;width: 18px;"><div class="framer-bnp6hl-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;" class="custom-cursor-on-hover"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M213.06,212.78l-63.42-99.66L212.44,44A6,6,0,1,0,203.56,36L143,102.62l-41.9-65.84A6,6,0,0,0,96,34H48a6,6,0,0,0-5.06,9.22l63.42,99.66L43.56,212A6,6,0,0,0,52.44,220L113,153.38l41.9,65.84A6,6,0,0,0,160,222h48a6,6,0,0,0,5.06-9.22ZM163.29,210,58.93,46H92.71L197.07,210Z"></path></g></svg></div></div><div class="framer-ve20jg-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;" class="custom-cursor-on-hover"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></g></svg></div></div></div>
+                    <div class="framer-1lsg37o" data-framer-name="Icon Wrapper" style="opacity: 1; height: 18px;width: 18px;"><div class="framer-bnp6hl-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;" class="custom-cursor-on-hover"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M213.06,212.78l-63.42-99.66L212.44,44A6,6,0,1,0,203.56,36L143,102.62l-41.9-65.84A6,6,0,0,0,96,34H48a6,6,0,0,0-5.06,9.22l63.42,99.66L43.56,212A6,6,0,0,0,52.44,220L113,153.38l41.9,65.84A6,6,0,0,0,160,222h48a6,6,0,0,0,5.06-9.22ZM163.29,210,58.93,46H92.71L197.07,210Z"></path></g></svg></div></div><div class="framer-ve20jg-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(255, 255, 255)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;" class="custom-cursor-on-hover"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></g></svg></div></div></div>
              </div>
                        </button>
                 <button class="button-f">
@@ -330,9 +346,28 @@ document.addEventListener('mousemove', (e) => {
                </div>
                      </button>
             </div>
-            <div class="animation"></div>
-            <div class="outro"></div>
+            <div class="framer-bdn6z5"><div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0;background-repeat:repeat;background-position:left top;background-size:128.00px auto;background-image:url(https://framerusercontent.com/images/6mcf62RlDfRfU61Yg5vb2pefpi4.png);border:0" data-framer-background-image-wrapper="true"></div></div>
+            <div class="outro">
+                <div class="outro-a" style="font-family:Pixelify Sans; ">Chip<span>MIT</span></div>
+                <div class="outro-b">
+                    <a href="">Contact</a>
+                    <a>Follow our Social Media</a>
+                    <a>Privacy Policy</a>
+                </div>
+                <div class="outro-c">Made with love by <span>ChipMIT Development Team</span></div>
+            </div>
+
+                
+                    <img src="icons/chipMIT-a.png" class="animation-a">
+                    <img src="icons/chipMIT-b.png" class="animation-b">
+                   
+                
+
+            
+            
         </div>
+        
         
     </body>
 </html>
+
