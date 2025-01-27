@@ -414,6 +414,7 @@ body{
     padding-left:0;
     padding-right: 0;
     overflow: hidden;
+    transition: 0.5s;
    
     
 }
@@ -430,13 +431,13 @@ body{
 }
 
 
-.coding-grid:hover > .para,
-.comparc-grid:hover > .para,
-.digital-grid:hover > .para,
-.analog-grid:hover > .para
+.coding-grid:hover > .para:nth-child(2),
+.comparc-grid:hover > .para:nth-child(2),
+.digital-grid:hover > .para:nth-child(2),
+.analog-grid:hover > .para:nth-child(2)
 {
 
-   height: 100%;
+   font-size: 2rem;
     
 
    
@@ -448,6 +449,8 @@ body{
 .digital-grid:hover ,
 .analog-grid:hover
 {
+    height: 300px;
+    width: 300px;
 
 
 
