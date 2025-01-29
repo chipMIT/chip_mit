@@ -1150,14 +1150,14 @@ align-items: center;
 @media (max-width:808px){
     .superior{
         font-size: 3.2rem;
-        width: 70%;
+        width: 78.2vw;
     }
 
 }
 @media (max-width:707px){
     .superior{
-        font-size: 3.2rem;
-        width: 70%;
+        font-size: 7vw;
+        width: 77vw;
     }
     .team-structure-b,
     .team-structure-c,
@@ -1171,4 +1171,45 @@ align-items: center;
         row-gap: 2vw;
     }
 
+}
+@media (max-width:640px) {
+
+    .team-structure{
+        flex-direction: column;
+       padding-left:20% ;
+       padding-right: 20%;
+       row-gap: 10vw;
+       
+    }
+    .team-structure-container{
+        justify-content: center;
+        align-items:center;
+        
+    }
+    .team-structure-b,
+    .team-structure-c,
+    .team-structure-d{
+        font-size: 11px;
+        text-align: center;
+    }
+    .team-structure-title{
+        font-size: 23px;
+        text-align:center;
+    }
+}
+@media (max-width:590px) {
+    .superior{
+        font-size:45px;
+        width: 95%;
+        
+    }
+    
+}
+@media (max-width:490px) {
+    .superior{
+        font-size:41px;
+        width: 100%;
+        
+    }
+    
 }
