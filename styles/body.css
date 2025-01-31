@@ -64,13 +64,13 @@ body{
     text-align: center;
     margin-bottom: 45px;
 }
-.domains::before{
+.slider-container::before{
     position: absolute;
     z-index: 10;
     left: 0;
     top:0;
     height: 100%;
-    width:25%;
+    width:23vw;
     background:linear-gradient(to right,black,transparent);
     content: "";
 
@@ -84,7 +84,7 @@ body{
     
 
 }
-.domains::after{
+.slider-container::after{
     position: absolute;
     z-index: 10;
     right: 0;
@@ -455,7 +455,7 @@ body{
 .digital-grid:hover ,
 .analog-grid:hover
 {
-    transform: perspective(1vw) translateZ(0.1vw);
+    transform: perspective(1vw) translateZ(0.2vw);
 
 
 
@@ -1053,8 +1053,10 @@ align-items: center;
     margin-top: 60px;
     margin-bottom: 60px;
 }
-para p:nth-of-type(2){
-    font-size: 18px;
+.non-tech-grid > .intro-a > img{
+    height:25px;
+    width:25px;
+
 }
 @media (max-width:1390px){
     .superior{
@@ -1185,6 +1187,7 @@ para p:nth-of-type(2){
     .team-structure-title{
         font-size: 24px;
     }
+    .domains-tea-a,
     .domains-team-a,
     .intro-b{
         font-size: 40px;
@@ -1196,6 +1199,14 @@ para p:nth-of-type(2){
     .para:nth-child(2){
         font-size: 22px;
         
+    }
+    .non-tech-grid > .intro-a > img{
+        height:20px;
+        width:20px;
+
+    }
+    .non-tech-grid .intro-a{
+        font-size: 16px;
     }
 
 }
@@ -1226,6 +1237,7 @@ para p:nth-of-type(2){
         font-size: 3.2rem;
         width: 78.2vw;
     }
+    .domains-tea-a,
     .domains-team-a,
     .intro-b{
         font-size: 35px;
@@ -1274,9 +1286,22 @@ para p:nth-of-type(2){
         width: 110px;
         font-size: 12px;
     }
+    .domains-tea-a,
     .domains-team-a,
     .intro-b{
         font-size: 30px;
+    }
+    .non-tech-grid > .intro-a {
+        column-gap: 2vw;
+    }
+
+    .non-tech-grid > .intro-a > img{
+        height:16px;
+        width:16px;
+
+    }
+    .non-tech-grid .intro-a{
+        font-size: 12px;
     }
 
 }
@@ -1304,6 +1329,7 @@ para p:nth-of-type(2){
         font-size: 23px;
         text-align:center;
     }
+    .domains-tea-a,
     .domains-team-a,
     .intro-b{
         font-size: 25px;
@@ -1322,6 +1348,20 @@ para p:nth-of-type(2){
         height: 35vw;
         width: 35vw;
     }
+    .non-tech-grid > .intro-a {
+        column-gap: 2vw;
+        margin: 1vw;
+        border-radius: 2vw;
+    }
+
+    .non-tech-grid > .intro-a > img{
+        height:14px;
+        width:14px;
+
+    }
+    .non-tech-grid .intro-a{
+        font-size: 10px;
+    }
     
 }
 @media (max-width:590px) {
@@ -1330,6 +1370,7 @@ para p:nth-of-type(2){
         width: 95%;
         
     }
+    .domains-tea-a,
     .domains-team-a,
     .intro-b{
         font-size: 20px;
@@ -1372,6 +1413,20 @@ para p:nth-of-type(2){
         font-size: 8px !important;
         
     }
+    .non-tech-grid > .intro-a {
+        column-gap: 2vw;
+        margin: 1vw;
+        border-radius: 2vw;
+    }
+
+    .non-tech-grid > .intro-a > img{
+        height:12px;
+        width:12px;
+
+    }
+    .non-tech-grid .intro-a{
+        font-size: 8px;
+    }
     
 }
 @media (max-width:390px) {
@@ -1386,6 +1441,15 @@ para p:nth-of-type(2){
         height: 29px;
         width: 60px;
         font-size: 2.2vw;
+    }
+    .para p:nth-child(1) {
+        font-size: 14px;
+       
+    }
+    
+    .para p:nth-of-type(2){
+        font-size: 6px !important;
+        
     }
     
 }
