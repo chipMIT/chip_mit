@@ -1094,6 +1094,7 @@ align-items: center;
         font-size: 3rem;
         width: 50%;
     }
+    .domains p,
     .inferior{
         font-size: 13px;
     }
@@ -1128,6 +1129,9 @@ align-items: center;
     .team-structure-title{
         font-size: 28px;
     }
+    .vis-mis-a{
+        font-size: 14px;
+    }
 
 }
 @media (max-width:880px){
@@ -1141,6 +1145,13 @@ align-items: center;
     }
     .team-structure-title{
         font-size: 24px;
+    }
+    .domains-team-a,
+    .intro-b{
+        font-size: 40px;
+    }
+    .vis-mis-a{
+        font-size: 12px;
     }
 
 }
@@ -1160,6 +1171,9 @@ align-items: center;
     .team-structure-container{
         row-gap: 3vw;
     }
+    .vis-mis-a{
+        font-size: 10px;
+    }
     
 
 }
@@ -1168,6 +1182,13 @@ align-items: center;
         font-size: 3.2rem;
         width: 78.2vw;
     }
+    .domains-team-a,
+    .intro-b{
+        font-size: 35px;
+    }
+    .vis,.mis{
+        padding: 3vw;
+    }
 
 }
 @media (max-width:707px){
@@ -1175,6 +1196,7 @@ align-items: center;
         font-size: 7vw;
         width: 77vw;
     }
+    .domains p,
     .inferior{
         font-size: 2.5vw;
         width: 77vw;
@@ -1198,6 +1220,10 @@ align-items: center;
         height: 38px;
         width: 110px;
         font-size: 12px;
+    }
+    .domains-team-a,
+    .intro-b{
+        font-size: 30px;
     }
 
 }
@@ -1225,12 +1251,21 @@ align-items: center;
         font-size: 23px;
         text-align:center;
     }
+    .domains-team-a,
+    .intro-b{
+        font-size: 25px;
+    }
+    
 }
 @media (max-width:590px) {
     .superior{
         font-size:45px;
         width: 95%;
         
+    }
+    .domains-team-a,
+    .intro-b{
+        font-size: 20px;
     }
     
 }
