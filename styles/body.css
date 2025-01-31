@@ -224,7 +224,8 @@ body{
 .contact-us-form{
     color: transparent 50%;
     border-radius: 40px;
-    width: 460px;
+    width: 50vw;
+    max-width: 500px;
     height: 65px;
     display:flexbox;
     border-width: 1px;
@@ -453,8 +454,8 @@ body{
 .digital-grid:hover ,
 .analog-grid:hover
 {
-    height: 300px;
-    width: 300px;
+    transform: perspective(1vw) translateZ(0.1vw);
+
 
 
 
@@ -1055,6 +1056,7 @@ align-items: center;
     .superior{
         font-size: 4.5rem;
     }
+    
 
 }
 @media (max-width:1253px){
@@ -1082,12 +1084,18 @@ align-items: center;
     .team-structure-title{
         font-size: 30px;
     }
+    .inferior{
+        font-size: 14px;
+    }
 
 }
 @media (max-width:1025px){
     .superior{
         font-size: 3rem;
         width: 50%;
+    }
+    .inferior{
+        font-size: 13px;
     }
     .team-structure-b,
     .team-structure-c,
@@ -1096,6 +1104,14 @@ align-items: center;
     }
     .team-structure-title{
         font-size: 29px;
+    }
+    .contact-us-form{
+        height: 50px;
+    }
+    .contact-us-button{
+        height: 38px;
+        width: 110px;
+        font-size: 12px;
     }
 
 }
@@ -1159,6 +1175,10 @@ align-items: center;
         font-size: 7vw;
         width: 77vw;
     }
+    .inferior{
+        font-size: 2.5vw;
+        width: 77vw;
+    }
     .team-structure-b,
     .team-structure-c,
     .team-structure-d{
@@ -1169,6 +1189,15 @@ align-items: center;
     }
     .team-structure-container{
         row-gap: 2vw;
+    }
+    .contact-us-form{
+        height: 50px;
+        width: 70vw;
+    }
+    .contact-us-button{
+        height: 38px;
+        width: 110px;
+        font-size: 12px;
     }
 
 }
@@ -1208,7 +1237,15 @@ align-items: center;
 @media (max-width:490px) {
     .superior{
         font-size:41px;
-        width: 100%;
+        width: 95%;
+        
+    }
+    
+}
+@media (max-width:305px) {
+    .superior{
+        font-size:36px;
+        width: 95%;
         
     }
     
