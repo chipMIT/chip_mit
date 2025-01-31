@@ -1240,12 +1240,86 @@ align-items: center;
         width: 95%;
         
     }
+    .contact-us-form{
+        height: 40px;
+        
+    }
+    ::placeholder{
+        font-size: 10px;
+    }
+    .contact-us-button{
+        height: 29px;
+        width: 80px;
+        font-size: 10px;
+    }
+    
+}
+@media (max-width:390px) {
+    .contact-us-form{
+        height: 40px;
+        
+    }
+    ::placeholder{
+        font-size: 10px;
+    }
+    .contact-us-button{
+        height: 29px;
+        width: 60px;
+        font-size: 2.2vw;
+    }
+    
+}
+@media (max-width:370px) {
+    .contact-us-form{
+        height: 30px;
+        
+    }
+    ::placeholder{
+        font-size: 9px;
+    }
+    .contact-us-button{
+        height: 19px;
+        width: 50px;
+        font-size: 6px;
+    }
+    
+}
+@media (max-width:352px) {
+    .contact-us-form{
+        height: 30px;
+        width: 80vw;
+        
+    }
+    ::placeholder{
+        font-size: 7px;
+    }
+    .contact-us-button{
+        height: 20px;
+        width: 60px;
+        font-size: 6px;
+        margin-right: 4px;
+    }
     
 }
 @media (max-width:305px) {
     .superior{
         font-size:36px;
         width: 95%;
+        
+    }
+    .contact-us-form{
+        height: 30px;
+        width: 80vw;
+        
+    }
+    ::placeholder{
+        font-size: 7px;
+    }
+    .contact-us-button{
+        height: 20px;
+        width: 60px;
+        font-size: 6px;
+        margin-right: 4px;
         
     }
     
