@@ -622,7 +622,7 @@ align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
-    margin: 100px;
+    margin: 10vw;
     height: 432px;
     padding: 20px;
 }
@@ -760,7 +760,7 @@ align-items: center;
     font-size: 44px;
     color: #cccccc;
     text-align: center;
-    width: 560px;
+    width: 100%;
     font-weight: 500;
     line-height: 1.1;
 }
@@ -768,7 +768,7 @@ align-items: center;
     font-size: 20px;
     color: #ddff00;
     text-align: center;
-    width: 560px;
+    width: 100%;
     
 }
 .button-a{
@@ -782,7 +782,8 @@ align-items: center;
     background-color: white;
     border-radius: 20px;
     padding: 20px;
-    width: 300px;
+    max-width: 300px;
+    width: 60%;
 }
 .framer-1lsg37o{
     overflow:hidden;
@@ -1075,6 +1076,13 @@ align-items: center;
     .head3 .team-grid-c{
         font-size: 14px;
 
+    }
+    .button-b,
+    .button-c,
+    .button-d,
+    .button-e,
+    .button-f{
+        width: 20%;
     }
     
 }
@@ -1387,10 +1395,14 @@ align-items: center;
     .team-structure-title{
         font-size: 24px;
     }
+    .collab-a{
+        font-size: 18px !important;
+    }
+    .collab-a,
     .domains-tea-a,
     .domains-team-a,
     .intro-b{
-        font-size: 40px;
+        font-size: 40px !important;
     }
     .vis-mis-a{
         font-size: 12px;
@@ -1412,10 +1424,10 @@ align-items: center;
         font-size: 20px;
         font-weight: 500;
         color: white;
-        
-        
     
-    
+    }
+    .collab{
+
     }
 
 }
@@ -1521,10 +1533,14 @@ align-items: center;
         font-size: 3.2rem;
         width: 78.2vw;
     }
+    .collab-b{
+        font-size: 16px !important;
+    }
+    .collab-a,
     .domains-tea-a,
     .domains-team-a,
     .intro-b{
-        font-size: 35px;
+        font-size: 35px !important;
     }
     .vis,.mis{
         padding: 3vw;
@@ -1628,10 +1644,14 @@ align-items: center;
         width: 110px;
         font-size: 12px;
     }
+    .collab-b{
+        font-size: 14px !important;
+    }
+    .collab-a,
     .domains-tea-a,
     .domains-team-a,
     .intro-b{
-        font-size: 30px;
+        font-size: 30px !important;
     }
     .non-tech-grid > .intro-a {
         column-gap: 2vw;
@@ -1739,10 +1759,14 @@ align-items: center;
         font-size: 23px;
         text-align:center;
     }
+    .collab-b{
+        font-size: 13px !important;
+    }
+    .collab-a,
     .domains-tea-a,
     .domains-team-a,
     .intro-b{
-        font-size: 25px;
+        font-size: 25px !important;
     }
     .domains-grid{
         grid-template-columns: 1fr 1fr;
@@ -1823,10 +1847,11 @@ align-items: center;
         width: 95%;
         
     }
+    .collab-a,
     .domains-tea-a,
     .domains-team-a,
     .intro-b{
-        font-size: 20px;
+        font-size: 20px !important;
     }
     .para p:nth-child(1) {
         font-size: 18px;
@@ -1981,7 +2006,7 @@ align-items: center;
  
     }
     .uni-content a{
-        font-size: 10px;
+        font-size: 12px;
     }
     .uni-content svg{
         height: 25px !important;
@@ -2034,7 +2059,7 @@ align-items: center;
  
     }
     .uni-content a{
-        font-size: 8px;
+        font-size: 12px;
     }
     .uni-content svg{
         height: 20px !important;
