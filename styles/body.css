@@ -903,7 +903,7 @@ align-items: center;
 }
 .framer-bdn6z5{
     position: relative;
-    height: 48px;
+    height: 2.8vw;
     margin-top: 60px;
  
   
@@ -914,18 +914,22 @@ align-items: center;
     width: 744px;
 }
 .animation-b{
+    height: 29vw;
+    width: auto;
 
     animation: rotation 12s linear infinite;
     position: absolute;
-    bottom:4%;
-    left:-10%;
+    bottom:17vw;
+    left:-10vw;
 }
 .animation-a{
+    height: 18vw;
+    width: auto;
 
     animation: rotation 4.4s linear infinite reverse;
     position: absolute;
-    bottom:5.33%;
-    left:-4%;
+    bottom:22.5vw;
+    left:-4vw;
 }
 
 @keyframes rotation {
@@ -1114,6 +1118,12 @@ align-items: center;
     .head2 .team-grid-c,
     .head3 .team-grid-c{
         font-size: 13px;
+
+    }
+    .animation-a{
+        
+    }
+    .animation-b{
 
     }
     
@@ -2093,6 +2103,17 @@ align-items: center;
         flex-direction: column;
         row-gap: 3px;
     }
+    .animation-a{
+        left: 40vw;
+        bottom: 25vw;
+       
+
+    }
+    .animation-b{
+        left: 35vw;
+        bottom: 20vw;
+
+    } 
 }
 @media (max-width:390px) {
     .contact-us-form{
