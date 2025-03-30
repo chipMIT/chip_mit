@@ -691,14 +691,18 @@ align-items: center;
 
 }
 .light{
-    position: absolute;
 
-    z-index: -2;
-    border-radius: 50%;
+    position: absolute;
     width: 200px;
     height: 200px;
-    pointer-events: none;
-    background: radial-gradient(rgba(208, 255, 0, 0.491),transparent 65% );
+    background: radial-gradient(circle, rgba(203, 247, 10, 0.4) 0%, rgba(0,0,0,0) 70%);
+    pointer-events: none; /* Prevents interaction */
+    z-index: -2;
+    will-change: transform; 
+
+
+
+  
 }
 .team-structure {
     display: flex;
@@ -1051,6 +1055,9 @@ align-items: center;
 .nav-c button:hover{
     border-color: #cccccc;
 }
+.heh{
+    display: none;
+}
 .sidebar{
      border-width: 1px;
         border-color: var(--token-69a06b4a-447e-422e-9e50-d39672ecdf48, rgb(38, 38, 38));
@@ -1066,14 +1073,15 @@ align-items: center;
     align-items: center;
     justify-content: start;
     top:20px;
-    right: 20px;
+    left: -100%;
+   
  
     height: 95vh;
     width: 50vw;
     backdrop-filter: blur(10px);
         background-color: var(--token-f8462981-9721-42e6-b3e4-0addd9427ec8, rgba(23, 23, 23, 0.6));
         border-radius: 30px;
-        display: none;
+    
 }
 .nav-d{
     backdrop-filter: blur(10px);
@@ -1526,6 +1534,14 @@ align-items: center;
         margin-bottom: 60px;
         
     }
+    
+    .faculty-grid .head1,
+    .faculty-grid .head2,
+    .faculty-grid .head3
+    {
+        height: 40vw;
+        
+    }
     .co-founder1,
     .co-founder2,
     .head1,
@@ -1603,6 +1619,10 @@ align-items: center;
     }
     .nav-d{
         display:inline;
+    }
+    .nav-d input:checked  .sidebar{
+        left: 50vw;
+
     }
     .nav-a img{
         height: 75px;
