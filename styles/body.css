@@ -510,6 +510,11 @@ align-items: center;
     
    
 }
+.contact-us-button {
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
 .contact-us-button{
     height: 49.2px;
     width: 145px;
