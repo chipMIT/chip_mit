@@ -1,16 +1,50 @@
+// Utility to update the light's position
+function updateLight(x, y) {
+    const lightEffect = document.querySelector('.light');
+    const scrollY = window.scrollY;
+    const clampedX = Math.min(window.innerWidth - 200, Math.max(0, x - 100));
+    const clampedY = Math.min(document.body.scrollHeight - 200, Math.max(scrollY, y + scrollY - 100));
+    lightEffect.style.left = `${clampedX}px`;
+    lightEffect.style.top = `${clampedY}px`;
+    lightEffect.style.opacity = '1'; // Show the light
+}
+
+// Desktop: mousemove
 document.addEventListener('mousemove', (e) => {
+    updateLight(e.clientX, e.clientY);
+});
+
+// Mobile: touchmove and auto-hide after 1s
+if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+    let hideTimeout = null;
     const lightEffect = document.querySelector('.light');
 
-    const scrollY = window.scrollY;
+    document.addEventListener('touchmove', (e) => {
+        const touch = e.touches[0];
+        updateLight(touch.clientX, touch.clientY);
 
+        // Reset hide timer on every touchmove
+        if (hideTimeout) clearTimeout(hideTimeout);
+        hideTimeout = setTimeout(() => {
+            lightEffect.style.opacity = '0'; // Hide the light
+        }, 1000);
+    }, { passive: true });
 
-    const x = Math.min(window.innerWidth - 200, Math.max(0, e.clientX - 100));
-    const y = Math.min(document.body.scrollHeight - 200, Math.max(scrollY, e.clientY + scrollY - 100));
+    // Optional: Also show on touchstart, hide after 1s on touchend
+    document.addEventListener('touchstart', (e) => {
+        const touch = e.touches[0];
+        updateLight(touch.clientX, touch.clientY);
+        lightEffect.style.opacity = '1';
+        if (hideTimeout) clearTimeout(hideTimeout);
+    }, { passive: true });
 
-    lightEffect.style.left = `${x}px`;
-    lightEffect.style.top = `${y}px`;
+    document.addEventListener('touchend', () => {
+        if (hideTimeout) clearTimeout(hideTimeout);
+        hideTimeout = setTimeout(() => {
+            lightEffect.style.opacity = '0';
+        }, 100);
     });
-
+}
 
     // document.addEventListener('touchmove', (e) => {
     //     e.preventDefault();
