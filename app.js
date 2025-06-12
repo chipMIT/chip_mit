@@ -12,9 +12,9 @@ document.addEventListener('mousemove', (e) => {
     });
 
 
-    document.addEventListener('touchmove', (e) => {
-        e.preventDefault();
-    }, { passive: false });
+    // document.addEventListener('touchmove', (e) => {
+    //     e.preventDefault();
+    // }, { passive: false });
 
 
 const hamburger = document.getElementById('hamburger');
