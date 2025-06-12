@@ -2282,7 +2282,7 @@ align-items: center;
     .contact-us-button{
         height: 29px;
         width: 60px;
-        font-size: 6px
+        font-size: 8px
     }
     .para p:nth-child(1) {
         font-size: 14px;
@@ -2416,7 +2416,7 @@ align-items: center;
     }
     .contact-us-button{
         height: 20px;
-        width: 60px;
+        width: 50px;
         font-size: 6px;
         margin-right: 4px;
     }
@@ -2438,7 +2438,7 @@ align-items: center;
     }
     .contact-us-button{
         height: 20px;
-        width: 60px;
+        width: 50px;
         font-size: 6px;
         margin-right: 4px;
         
