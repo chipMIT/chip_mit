@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Michroma&family=Ovo&family=Oxanium:wght@200..800&family=Pirata+One&family=Pixelify+Sans:wght@400..700&family=Racing+Sans+One&family=Sarina&family=Yatra+One&display=swap" rel="stylesheet">  
-    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
 </head>
     <body>
         
@@ -29,12 +29,12 @@
                 <a href="#about">About</a>
                 <a href="#team">Team</a>
                 <a href="#contact">Contact</a>
-                   </div>
+            </div>
             <div class="nav-c">
                 <a href="#contact"><button >Follow Us</button></a>
                 
             </div >
-            <div class="nav-d">
+            <div class="nav-d" id="hamburger">
                 <a href="">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#cccccc">
                         <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
@@ -42,34 +42,25 @@
                 </a>
         
             </div>
-            <div class="sidebar">
+            <div class="sidebar" id="sidebar">
+                <div style="display: flex; align-self: end;">
+                    <a  href="javascript:void(0)" id="close-btn" style="margin: 3vw;">
+                        <span class="material-symbols-outlined">close</span>     
+                    </a>
+                </div>
+                
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#team">Team</a>
                 <a href="#contact">Contact</a>
             </div>
+            <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
            
         </div>
         <div class="light"></div>
-    <script type="text/javascript">
-        document.addEventListener('mousemove', (e) => {
-    const lightEffect = document.querySelector('.light');
-
-    const scrollY = window.scrollY;
-
-
-    const x = Math.min(window.innerWidth - 200, Math.max(0, e.clientX - 100));
-    const y = Math.min(document.body.scrollHeight - 200, Math.max(scrollY, e.clientY + scrollY - 100));
-
-    lightEffect.style.left = `${x}px`;
-    lightEffect.style.top = `${y}px`;
-    });
-
-
-    document.addEventListener('touchmove', (e) => {
-        e.preventDefault();
-    }, { passive: false });
-
+    <script src="app.js">
+        
     </script>
         <div style="z-index: 0;position: relative;">
             <div class="heading" id="home">
@@ -651,9 +642,9 @@
                     <div class="team-structure-b" >The Board is made up of the division head members who oversee the strategic direction of ChipMIT. They are responsible for high-level decision-making, planning, and ensuring the club stays aligned with its goals.</div>
                 </div >
                 <div class="team-structure-container">
-                    <div class="team-structure-title"><div>The</div><span style="color:rgb(221, 255, 0);">Core</span><div>Committee</div></div>
+                    <div class="team-structure-title" style="text-align:left;"><div>The</div><span style="color:rgb(221, 255, 0);">Core</span><div>Committee</div></div>
                     
-                    <div class="team-structure-c">The Core Team consists of second-year members who handle the day-to-day operations of ChipMIT. They execute tasks, manage events, and ensure smooth implementation of projects.</div>
+                    <div class="team-structure-d">The Core Team consists of second-year members who handle the day-to-day operations of ChipMIT. They execute tasks, manage events, and ensure smooth implementation of projects.</div>
                 </div>
                 
             </div>
@@ -708,11 +699,7 @@
                     <div class="framer-1lsg37o" data-framer-name="Icon Wrapper" style="opacity: 1; height: 18px;width: 18px;"><div class="framer-bnp6hl-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M134,160v72a6,6,0,0,1-12,0V160a6,6,0,0,1,12,0Zm74-62H142.48l45.76-45.76a6,6,0,0,0-8.48-8.48L134,89.52V24a6,6,0,0,0-12,0V89.52L76.24,43.76a6,6,0,0,0-8.48,8.48L113.52,98H48a6,6,0,0,0,0,12h65.52L67.76,155.76a6,6,0,1,0,8.48,8.48L128,112.48l51.76,51.76a6,6,0,0,0,8.48-8.48L142.48,110H208a6,6,0,0,0,0-12Z"></path></g></svg></div></div><div class="framer-ve20jg-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(255, 255, 255)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></g></svg></div></div></div>
              </div>
                        </button>
-                <button class="button-e">
-                    <div class="button-a"><div>Twitter / X</div>
-                    <div class="framer-1lsg37o" data-framer-name="Icon Wrapper" style="opacity: 1; height: 18px;width: 18px;"><div class="framer-bnp6hl-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;" class="custom-cursor-on-hover"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M213.06,212.78l-63.42-99.66L212.44,44A6,6,0,1,0,203.56,36L143,102.62l-41.9-65.84A6,6,0,0,0,96,34H48a6,6,0,0,0-5.06,9.22l63.42,99.66L43.56,212A6,6,0,0,0,52.44,220L113,153.38l41.9,65.84A6,6,0,0,0,160,222h48a6,6,0,0,0,5.06-9.22ZM163.29,210,58.93,46H92.71L197.07,210Z"></path></g></svg></div></div><div class="framer-ve20jg-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(255, 255, 255)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17)); flex-shrink: 0;" class="custom-cursor-on-hover"><g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(14, 16, 17))" weight="light"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></g></svg></div></div></div>
-             </div>
-                       </button>
+               
                 <button class="button-f">
                     <div class="button-a"><div>Contact Us</div>
                     <div class="framer-1lsg37o" data-framer-name="Icon Wrapper" style="opacity: 1; height: 18px;width: 18px;"><div class="framer-bnp6hl-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-af250fab-523a-41d3-9565-21f31be56f17, rgb(13, 13, 13))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-af250fab-523a-41d3-9565-21f31be56f17, rgb(13, 13, 13)); color: var(--token-af250fab-523a-41d3-9565-21f31be56f17, rgb(13, 13, 13)); flex-shrink: 0;"><g color="var(--token-af250fab-523a-41d3-9565-21f31be56f17, rgb(13, 13, 13))" weight="light"><path d="M224,50H32a6,6,0,0,0-6,6V192a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A6,6,0,0,0,224,50Zm-96,85.86L47.42,62H208.58ZM101.67,128,38,186.36V69.64Zm8.88,8.14L124,148.42a6,6,0,0,0,8.1,0l13.4-12.28L208.58,194H47.43ZM154.33,128,218,69.64V186.36Z"></path></g></svg></div></div><div class="framer-ve20jg-container" style="transform: none; transform-origin: 50% 50% 0px;"><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-c5446a54-80de-4f79-b24b-55997bf1fe5e, rgb(255, 255, 255))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-c5446a54-80de-4f79-b24b-55997bf1fe5e, rgb(255, 255, 255)); color: var(--token-c5446a54-80de-4f79-b24b-55997bf1fe5e, rgb(255, 255, 255)); flex-shrink: 0;"><g color="var(--token-c5446a54-80de-4f79-b24b-55997bf1fe5e, rgb(255, 255, 255))" weight="light"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"></path></g></svg></div></div></div>
