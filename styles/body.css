@@ -230,7 +230,7 @@ body{
     width: 50vw;
     max-width: 500px;
     height: 65px;
-    display:flexbox;
+    position: relative;
     border-width: 1px;
     border-color: rgb(49, 49, 49);
     border-style: solid;
@@ -517,10 +517,12 @@ align-items: center;
 
 .contact-us-button{
     height: 49.2px;
+    position: absolute;
+    right: 8px;
     width: 145px;
     border-radius:30px ;
     border-width: 0px;
-    margin-right: 8px;
+    /* margin-right: 8px; */
     font-family: Poppins;
     background-color: rgb(221, 255, 0);
     box-shadow: rgba(221, 255, 0, 0.2) 0px 20px 35px 0px;
@@ -2287,7 +2289,8 @@ align-items: center;
     .contact-us-button{
         height: 29px;
         width: 60px;
-        font-size: 8px
+        font-size: 8px;
+        right: 4px;
     }
     .para p:nth-child(1) {
         font-size: 14px;
@@ -2423,7 +2426,7 @@ align-items: center;
         height: 20px;
         width: 50px;
         font-size: 6px;
-        margin-right: 4px;
+        right: 4px;
     }
     
 }
@@ -2451,7 +2454,7 @@ align-items: center;
         height: 20px;
         width: 50px;
         font-size: 6px;
-        margin-right: 4px;
+        right: 2px;
         
     }
     .co-founder1 ,
