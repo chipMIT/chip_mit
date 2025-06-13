@@ -536,7 +536,7 @@ align-items: center;
 .contact-us{
     font-family: Poppins;
     flex:1;
-    
+    color: #cccccc;
     background: transparent;
     border: 0;
     outline: none;
