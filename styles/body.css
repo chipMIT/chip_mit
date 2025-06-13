@@ -250,9 +250,11 @@ body{
     bottom:0;
     right: 0;
 }
+
 .team-insta,
 .team-linkedin,
-.team-git{
+.team-git,
+.team-none{
     height: 35px;
     width: auto;
     
@@ -260,15 +262,25 @@ body{
 }
 .team-insta,
 .team-linkedin,
-.team-git path{
+.team-git,
+.team-none path{
     fill:  rgb(36, 36, 36);
 }
-.team-grid-d path{
+.team-insta path,
+.team-linkedin path,
+.team-git path{
     transition: fill 0.7s ease;
 
 }
-
-.team-grid-d svg:hover > path{
+.team-insta:hover > path
+{
+fill:#cccccc;
+}
+.team-linkedin:hover > path
+{
+fill:#cccccc;
+}
+.team-git:hover > path{
     fill:#cccccc;
 
 
