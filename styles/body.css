@@ -8,18 +8,22 @@ html, body {
     --animationTime:29s ;
     --itemsCount:9;
 }
+.outro-b a:link,a:visited,
 .nav-b a:link,a:visited {
     text-decoration: none;
     color: #7a7a7a;
  }
+ .outro-b a:link,
 .nav-b a:link{
     color: #7a7a7a;
     font-size: 16px;
 }
+.outro-b a:active,
 .nav-b a:active{
     color: #cccccc;
     font-size: 16px;
 }
+.outro-b a,
 .nav-b a{
     transition: color 0.7s;
 }
@@ -2378,6 +2382,12 @@ align-items: center;
         font-size: 17px;
         text-align:center;
     }
+    .faculty-grid .head1,
+    .faculty-grid .head2,
+    .faculty-grid .head3{
+        height: 42vw;
+
+    }
     
 }
 @media (max-width:370px) {
@@ -2429,7 +2439,9 @@ align-items: center;
 
     }
 
-
+    .fac{
+        font-size: 10px !important;
+    }
     .co-founder1 .team-grid-c,
     .co-founder2 .team-grid-c,
     .head1 .team-grid-c,
