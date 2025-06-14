@@ -1541,6 +1541,9 @@ align-items: center;
         font-size: 37px;
 
     }
+    .outro-b a:link{
+        font-size: 12px;
+    }
     .outro-b,
     .outro-c{
         font-size: 12px;
@@ -1706,6 +1709,9 @@ align-items: center;
     .outro-a{
         font-size: 35px;
 
+    }
+    .outro-b a:link{
+        font-size: 10px;
     }
     .outro-b,
     .outro-c{
@@ -1971,6 +1977,7 @@ align-items: center;
         font-size: 33px;
 
     }
+    
     .outro-b,
     .outro-c{
   
@@ -2280,6 +2287,9 @@ align-items: center;
         font-size: 30px;
 
     }
+    .outro-b a:link{
+        font-size: 8px;
+    }
     .outro-b,
     .outro-c{
         font-size: 8px;
@@ -2370,6 +2380,9 @@ align-items: center;
     .outro-a{
         font-size: 26px;
 
+    }
+    .outro-b a:link{
+        font-size: 7px;
     }
     .outro-b,
     .outro-c{
